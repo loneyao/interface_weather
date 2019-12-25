@@ -1,0 +1,15 @@
+- config:
+    name: 城市天气查询
+    setup_hooks:
+        - ${hook_up()}
+        - ${hook_print(setup)}
+
+    teardown_hooks:
+        - ${hook_down()}
+        - ${hook_print(teardown)}
+
+
+
+- test:
+    name: 当前城市:$cityname / ${quote($cityname)}
+    api: 'api/get_weather.yml'

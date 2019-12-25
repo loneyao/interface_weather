@@ -1,0 +1,2291 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2019-12-25 14:08:28</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">0.926 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.4.5 </td>
+      <td>CPython 3.6.5 </td>
+      <td colspan="2">Darwin-17.5.0-x86_64-i386-64bit</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">6 (6/0)</td>
+      <td colspan="2">6 (6/0/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>create1</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">当前城市:福州 / %E7%A6%8F%E5%B7%9E</td>
+      <td style="text-align:center;width:6em;">126.62 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 当前城市:福州 / %E7%A6%8F%E5%B7%9E</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E7%A6%8F%E5%B7%9E&key=ef89cb108293d8f57e3dfe63610e0680
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.22.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E7%A6%8F%E5%B7%9E&key=ef89cb108293d8f57e3dfe63610e0680
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'aliyungf_tc': 'AQAAAGuKDW4XCQ8AnApC2mDySLNNtnaK'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Wed, 25 Dec 2019 06:08:29 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=utf-8&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Set-Cookie&#34;: &#34;aliyungf_tc=AQAAAGuKDW4XCQ8AnApC2mDySLNNtnaK; Path=/; HttpOnly&#34;,
+  &#34;Etag&#34;: &#34;55826f3e9cb13da564e47935fb7fbfd9&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;resultcode&#34;: &#34;200&#34;,
+  &#34;reason&#34;: &#34;successed!&#34;,
+  &#34;result&#34;: {
+    &#34;sk&#34;: {
+      &#34;temp&#34;: &#34;20&#34;,
+      &#34;wind_direction&#34;: &#34;南风&#34;,
+      &#34;wind_strength&#34;: &#34;3级&#34;,
+      &#34;humidity&#34;: &#34;63%&#34;,
+      &#34;time&#34;: &#34;13:46&#34;
+    },
+    &#34;today&#34;: {
+      &#34;temperature&#34;: &#34;13℃~22℃&#34;,
+      &#34;weather&#34;: &#34;小雨转晴&#34;,
+      &#34;weather_id&#34;: {
+        &#34;fa&#34;: &#34;07&#34;,
+        &#34;fb&#34;: &#34;00&#34;
+      },
+      &#34;wind&#34;: &#34;持续无风向微风&#34;,
+      &#34;week&#34;: &#34;星期三&#34;,
+      &#34;city&#34;: &#34;福州&#34;,
+      &#34;date_y&#34;: &#34;2019年12月25日&#34;,
+      &#34;dressing_index&#34;: &#34;较舒适&#34;,
+      &#34;dressing_advice&#34;: &#34;建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等。&#34;,
+      &#34;uv_index&#34;: &#34;最弱&#34;,
+      &#34;comfort_index&#34;: &#34;&#34;,
+      &#34;wash_index&#34;: &#34;不宜&#34;,
+      &#34;travel_index&#34;: &#34;较不宜&#34;,
+      &#34;exercise_index&#34;: &#34;较不宜&#34;,
+      &#34;drying_index&#34;: &#34;&#34;
+    },
+    &#34;future&#34;: [
+      {
+        &#34;temperature&#34;: &#34;13℃~22℃&#34;,
+        &#34;weather&#34;: &#34;小雨转晴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;07&#34;,
+          &#34;fb&#34;: &#34;00&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期三&#34;,
+        &#34;date&#34;: &#34;20191225&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;11℃~22℃&#34;,
+        &#34;weather&#34;: &#34;阴转小雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;07&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期四&#34;,
+        &#34;date&#34;: &#34;20191226&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;9℃~16℃&#34;,
+        &#34;weather&#34;: &#34;多云&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;01&#34;
+        },
+        &#34;wind&#34;: &#34;东风3-5级&#34;,
+        &#34;week&#34;: &#34;星期五&#34;,
+        &#34;date&#34;: &#34;20191227&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;11℃~19℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;东风3-5级&#34;,
+        &#34;week&#34;: &#34;星期六&#34;,
+        &#34;date&#34;: &#34;20191228&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;16℃~18℃&#34;,
+        &#34;weather&#34;: &#34;大雨转中雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;09&#34;,
+          &#34;fb&#34;: &#34;08&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期日&#34;,
+        &#34;date&#34;: &#34;20191229&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;11℃~22℃&#34;,
+        &#34;weather&#34;: &#34;阴转小雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;07&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期一&#34;,
+        &#34;date&#34;: &#34;20191230&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;9℃~16℃&#34;,
+        &#34;weather&#34;: &#34;多云&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;01&#34;
+        },
+        &#34;wind&#34;: &#34;东风3-5级&#34;,
+        &#34;week&#34;: &#34;星期二&#34;,
+        &#34;date&#34;: &#34;20191231&#34;
+      }
+    ]
+  },
+  &#34;error_code&#34;: 0
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1748</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>126.62</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>114.098</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>create1</h3>
+  <table id="suite_2" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_2_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">当前城市:南平 / %E5%8D%97%E5%B9%B3</td>
+      <td style="text-align:center;width:6em;">91.81 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_2_1_1">log-1</a>
+        <div id="popup_log_2_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_2_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 当前城市:南平 / %E5%8D%97%E5%B9%B3</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E5%8D%97%E5%B9%B3&key=ef89cb108293d8f57e3dfe63610e0680
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.22.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E5%8D%97%E5%B9%B3&key=ef89cb108293d8f57e3dfe63610e0680
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'aliyungf_tc': 'AQAAAL0Wr1rQSgEAnApC2m9d6ToWbpD3'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Wed, 25 Dec 2019 06:08:29 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=utf-8&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Set-Cookie&#34;: &#34;aliyungf_tc=AQAAAL0Wr1rQSgEAnApC2m9d6ToWbpD3; Path=/; HttpOnly&#34;,
+  &#34;Etag&#34;: &#34;55826f3e9cb13da564e47935fb7fbfd9&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;resultcode&#34;: &#34;200&#34;,
+  &#34;reason&#34;: &#34;successed!&#34;,
+  &#34;result&#34;: {
+    &#34;sk&#34;: {
+      &#34;temp&#34;: &#34;20&#34;,
+      &#34;wind_direction&#34;: &#34;西风&#34;,
+      &#34;wind_strength&#34;: &#34;1级&#34;,
+      &#34;humidity&#34;: &#34;63%&#34;,
+      &#34;time&#34;: &#34;13:49&#34;
+    },
+    &#34;today&#34;: {
+      &#34;temperature&#34;: &#34;13℃~23℃&#34;,
+      &#34;weather&#34;: &#34;多云转阴&#34;,
+      &#34;weather_id&#34;: {
+        &#34;fa&#34;: &#34;01&#34;,
+        &#34;fb&#34;: &#34;02&#34;
+      },
+      &#34;wind&#34;: &#34;持续无风向微风&#34;,
+      &#34;week&#34;: &#34;星期三&#34;,
+      &#34;city&#34;: &#34;南平&#34;,
+      &#34;date_y&#34;: &#34;2019年12月25日&#34;,
+      &#34;dressing_index&#34;: &#34;较舒适&#34;,
+      &#34;dressing_advice&#34;: &#34;建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等。&#34;,
+      &#34;uv_index&#34;: &#34;最弱&#34;,
+      &#34;comfort_index&#34;: &#34;&#34;,
+      &#34;wash_index&#34;: &#34;较适宜&#34;,
+      &#34;travel_index&#34;: &#34;较适宜&#34;,
+      &#34;exercise_index&#34;: &#34;较适宜&#34;,
+      &#34;drying_index&#34;: &#34;&#34;
+    },
+    &#34;future&#34;: [
+      {
+        &#34;temperature&#34;: &#34;13℃~23℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期三&#34;,
+        &#34;date&#34;: &#34;20191225&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;8℃~17℃&#34;,
+        &#34;weather&#34;: &#34;阴转晴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;00&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期四&#34;,
+        &#34;date&#34;: &#34;20191226&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;6℃~17℃&#34;,
+        &#34;weather&#34;: &#34;晴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;00&#34;,
+          &#34;fb&#34;: &#34;00&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期五&#34;,
+        &#34;date&#34;: &#34;20191227&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;7℃~19℃&#34;,
+        &#34;weather&#34;: &#34;晴转小雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;00&#34;,
+          &#34;fb&#34;: &#34;07&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期六&#34;,
+        &#34;date&#34;: &#34;20191228&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;12℃~17℃&#34;,
+        &#34;weather&#34;: &#34;中雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;08&#34;,
+          &#34;fb&#34;: &#34;08&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期日&#34;,
+        &#34;date&#34;: &#34;20191229&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;7℃~19℃&#34;,
+        &#34;weather&#34;: &#34;晴转小雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;00&#34;,
+          &#34;fb&#34;: &#34;07&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期一&#34;,
+        &#34;date&#34;: &#34;20191230&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;8℃~17℃&#34;,
+        &#34;weather&#34;: &#34;阴转晴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;00&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期二&#34;,
+        &#34;date&#34;: &#34;20191231&#34;
+      }
+    ]
+  },
+  &#34;error_code&#34;: 0
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1763</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>91.81</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>89.288</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>create1</h3>
+  <table id="suite_3" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_3_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">当前城市:泉州 / %E6%B3%89%E5%B7%9E</td>
+      <td style="text-align:center;width:6em;">100.00 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_3_1_1">log-1</a>
+        <div id="popup_log_3_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_3_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 当前城市:泉州 / %E6%B3%89%E5%B7%9E</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E6%B3%89%E5%B7%9E&key=ef89cb108293d8f57e3dfe63610e0680
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.22.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E6%B3%89%E5%B7%9E&key=ef89cb108293d8f57e3dfe63610e0680
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'aliyungf_tc': 'AQAAAPs+VS/XtQIAnApC2mnF74AMpG9o'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Wed, 25 Dec 2019 06:08:29 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=utf-8&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Set-Cookie&#34;: &#34;aliyungf_tc=AQAAAPs+VS/XtQIAnApC2mnF74AMpG9o; Path=/; HttpOnly&#34;,
+  &#34;Etag&#34;: &#34;2b0bde8bd5937a9947bd42de9649e510&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;resultcode&#34;: &#34;200&#34;,
+  &#34;reason&#34;: &#34;successed!&#34;,
+  &#34;result&#34;: {
+    &#34;sk&#34;: {
+      &#34;temp&#34;: &#34;19&#34;,
+      &#34;wind_direction&#34;: &#34;西南风&#34;,
+      &#34;wind_strength&#34;: &#34;3级&#34;,
+      &#34;humidity&#34;: &#34;70%&#34;,
+      &#34;time&#34;: &#34;13:50&#34;
+    },
+    &#34;today&#34;: {
+      &#34;temperature&#34;: &#34;14℃~23℃&#34;,
+      &#34;weather&#34;: &#34;阴&#34;,
+      &#34;weather_id&#34;: {
+        &#34;fa&#34;: &#34;02&#34;,
+        &#34;fb&#34;: &#34;02&#34;
+      },
+      &#34;wind&#34;: &#34;东风3-5级&#34;,
+      &#34;week&#34;: &#34;星期三&#34;,
+      &#34;city&#34;: &#34;泉州&#34;,
+      &#34;date_y&#34;: &#34;2019年12月25日&#34;,
+      &#34;dressing_index&#34;: &#34;较舒适&#34;,
+      &#34;dressing_advice&#34;: &#34;建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等。&#34;,
+      &#34;uv_index&#34;: &#34;最弱&#34;,
+      &#34;comfort_index&#34;: &#34;&#34;,
+      &#34;wash_index&#34;: &#34;较适宜&#34;,
+      &#34;travel_index&#34;: &#34;较适宜&#34;,
+      &#34;exercise_index&#34;: &#34;较适宜&#34;,
+      &#34;drying_index&#34;: &#34;&#34;
+    },
+    &#34;future&#34;: [
+      {
+        &#34;temperature&#34;: &#34;14℃~23℃&#34;,
+        &#34;weather&#34;: &#34;阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;东风3-5级&#34;,
+        &#34;week&#34;: &#34;星期三&#34;,
+        &#34;date&#34;: &#34;20191225&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;14℃~24℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;东北风4-5级&#34;,
+        &#34;week&#34;: &#34;星期四&#34;,
+        &#34;date&#34;: &#34;20191226&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;11℃~17℃&#34;,
+        &#34;weather&#34;: &#34;阴转多云&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;01&#34;
+        },
+        &#34;wind&#34;: &#34;东北风4-5级&#34;,
+        &#34;week&#34;: &#34;星期五&#34;,
+        &#34;date&#34;: &#34;20191227&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;12℃~20℃&#34;,
+        &#34;weather&#34;: &#34;多云转小雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;07&#34;
+        },
+        &#34;wind&#34;: &#34;东北风4-5级&#34;,
+        &#34;week&#34;: &#34;星期六&#34;,
+        &#34;date&#34;: &#34;20191228&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;15℃~19℃&#34;,
+        &#34;weather&#34;: &#34;大雨转中雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;09&#34;,
+          &#34;fb&#34;: &#34;08&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期日&#34;,
+        &#34;date&#34;: &#34;20191229&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;14℃~24℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;东北风4-5级&#34;,
+        &#34;week&#34;: &#34;星期一&#34;,
+        &#34;date&#34;: &#34;20191230&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;14℃~24℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;东北风4-5级&#34;,
+        &#34;week&#34;: &#34;星期二&#34;,
+        &#34;date&#34;: &#34;20191231&#34;
+      }
+    ]
+  },
+  &#34;error_code&#34;: 0
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1732</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>100.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>97.34</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>create1</h3>
+  <table id="suite_4" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_4_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">当前城市:平潭 / %E5%B9%B3%E6%BD%AD</td>
+      <td style="text-align:center;width:6em;">351.70 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_4_1_1">log-1</a>
+        <div id="popup_log_4_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_4_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 当前城市:平潭 / %E5%B9%B3%E6%BD%AD</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E5%B9%B3%E6%BD%AD&key=ef89cb108293d8f57e3dfe63610e0680
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.22.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E5%B9%B3%E6%BD%AD&key=ef89cb108293d8f57e3dfe63610e0680
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'aliyungf_tc': 'AQAAAH13qiOHUwQAnApC2ibcZ3JM2Gfr'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Wed, 25 Dec 2019 06:08:29 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=utf-8&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Set-Cookie&#34;: &#34;aliyungf_tc=AQAAAH13qiOHUwQAnApC2ibcZ3JM2Gfr; Path=/; HttpOnly&#34;,
+  &#34;Etag&#34;: &#34;02132b8fec79c49b795f7726ed238b59&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;resultcode&#34;: &#34;200&#34;,
+  &#34;reason&#34;: &#34;查询成功&#34;,
+  &#34;result&#34;: {
+    &#34;sk&#34;: {
+      &#34;temp&#34;: &#34;16&#34;,
+      &#34;wind_direction&#34;: &#34;东北风&#34;,
+      &#34;wind_strength&#34;: &#34;3级&#34;,
+      &#34;humidity&#34;: &#34;83%&#34;,
+      &#34;time&#34;: &#34;13:58&#34;
+    },
+    &#34;today&#34;: {
+      &#34;temperature&#34;: &#34;14℃~17℃&#34;,
+      &#34;weather&#34;: &#34;多云转小雨&#34;,
+      &#34;weather_id&#34;: {
+        &#34;fa&#34;: &#34;01&#34;,
+        &#34;fb&#34;: &#34;07&#34;
+      },
+      &#34;wind&#34;: &#34;北风3-5级&#34;,
+      &#34;week&#34;: &#34;星期三&#34;,
+      &#34;city&#34;: &#34;平潭&#34;,
+      &#34;date_y&#34;: &#34;2019年12月25日&#34;,
+      &#34;dressing_index&#34;: &#34;较冷&#34;,
+      &#34;dressing_advice&#34;: &#34;建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。&#34;,
+      &#34;uv_index&#34;: &#34;最弱&#34;,
+      &#34;comfort_index&#34;: &#34;&#34;,
+      &#34;wash_index&#34;: &#34;不宜&#34;,
+      &#34;travel_index&#34;: &#34;较适宜&#34;,
+      &#34;exercise_index&#34;: &#34;较适宜&#34;,
+      &#34;drying_index&#34;: &#34;&#34;
+    },
+    &#34;future&#34;: [
+      {
+        &#34;temperature&#34;: &#34;14℃~17℃&#34;,
+        &#34;weather&#34;: &#34;多云转小雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;07&#34;
+        },
+        &#34;wind&#34;: &#34;北风3-5级&#34;,
+        &#34;week&#34;: &#34;星期三&#34;,
+        &#34;date&#34;: &#34;20191225&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;12℃~18℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;东北风4-5级&#34;,
+        &#34;week&#34;: &#34;星期四&#34;,
+        &#34;date&#34;: &#34;20191226&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;11℃~14℃&#34;,
+        &#34;weather&#34;: &#34;阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;东北风5-6级&#34;,
+        &#34;week&#34;: &#34;星期五&#34;,
+        &#34;date&#34;: &#34;20191227&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;13℃~17℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;北风5-6级&#34;,
+        &#34;week&#34;: &#34;星期六&#34;,
+        &#34;date&#34;: &#34;20191228&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;15℃~17℃&#34;,
+        &#34;weather&#34;: &#34;大雨转中雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;09&#34;,
+          &#34;fb&#34;: &#34;08&#34;
+        },
+        &#34;wind&#34;: &#34;北风3-5级&#34;,
+        &#34;week&#34;: &#34;星期日&#34;,
+        &#34;date&#34;: &#34;20191229&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;11℃~14℃&#34;,
+        &#34;weather&#34;: &#34;阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;东北风5-6级&#34;,
+        &#34;week&#34;: &#34;星期一&#34;,
+        &#34;date&#34;: &#34;20191230&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;13℃~17℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;北风5-6级&#34;,
+        &#34;week&#34;: &#34;星期二&#34;,
+        &#34;date&#34;: &#34;20191231&#34;
+      }
+    ]
+  },
+  &#34;error_code&#34;: 0
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1686</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>351.7</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>349.41</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>create1</h3>
+  <table id="suite_5" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_5_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">当前城市:莆田 / %E8%8E%86%E7%94%B0</td>
+      <td style="text-align:center;width:6em;">97.33 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_5_1_1">log-1</a>
+        <div id="popup_log_5_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_5_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 当前城市:莆田 / %E8%8E%86%E7%94%B0</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E8%8E%86%E7%94%B0&key=ef89cb108293d8f57e3dfe63610e0680
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.22.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E8%8E%86%E7%94%B0&key=ef89cb108293d8f57e3dfe63610e0680
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'aliyungf_tc': 'AQAAAGFpQCcWvwkAnApC2k96vCEFFoD/'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Wed, 25 Dec 2019 06:08:29 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=utf-8&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Set-Cookie&#34;: &#34;aliyungf_tc=AQAAAGFpQCcWvwkAnApC2k96vCEFFoD/; Path=/; HttpOnly&#34;,
+  &#34;Etag&#34;: &#34;2b0bde8bd5937a9947bd42de9649e510&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;resultcode&#34;: &#34;200&#34;,
+  &#34;reason&#34;: &#34;successed!&#34;,
+  &#34;result&#34;: {
+    &#34;sk&#34;: {
+      &#34;temp&#34;: &#34;19&#34;,
+      &#34;wind_direction&#34;: &#34;东风&#34;,
+      &#34;wind_strength&#34;: &#34;3级&#34;,
+      &#34;humidity&#34;: &#34;72%&#34;,
+      &#34;time&#34;: &#34;13:50&#34;
+    },
+    &#34;today&#34;: {
+      &#34;temperature&#34;: &#34;15℃~22℃&#34;,
+      &#34;weather&#34;: &#34;多云&#34;,
+      &#34;weather_id&#34;: {
+        &#34;fa&#34;: &#34;01&#34;,
+        &#34;fb&#34;: &#34;01&#34;
+      },
+      &#34;wind&#34;: &#34;持续无风向微风&#34;,
+      &#34;week&#34;: &#34;星期三&#34;,
+      &#34;city&#34;: &#34;莆田&#34;,
+      &#34;date_y&#34;: &#34;2019年12月25日&#34;,
+      &#34;dressing_index&#34;: &#34;较舒适&#34;,
+      &#34;dressing_advice&#34;: &#34;建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等。&#34;,
+      &#34;uv_index&#34;: &#34;弱&#34;,
+      &#34;comfort_index&#34;: &#34;&#34;,
+      &#34;wash_index&#34;: &#34;较适宜&#34;,
+      &#34;travel_index&#34;: &#34;较适宜&#34;,
+      &#34;exercise_index&#34;: &#34;较适宜&#34;,
+      &#34;drying_index&#34;: &#34;&#34;
+    },
+    &#34;future&#34;: [
+      {
+        &#34;temperature&#34;: &#34;15℃~22℃&#34;,
+        &#34;weather&#34;: &#34;多云&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;01&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期三&#34;,
+        &#34;date&#34;: &#34;20191225&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;13℃~23℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期四&#34;,
+        &#34;date&#34;: &#34;20191226&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;11℃~16℃&#34;,
+        &#34;weather&#34;: &#34;阴转多云&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;01&#34;
+        },
+        &#34;wind&#34;: &#34;东北风3-5级&#34;,
+        &#34;week&#34;: &#34;星期五&#34;,
+        &#34;date&#34;: &#34;20191227&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;13℃~19℃&#34;,
+        &#34;weather&#34;: &#34;多云转小雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;07&#34;
+        },
+        &#34;wind&#34;: &#34;东北风3-5级&#34;,
+        &#34;week&#34;: &#34;星期六&#34;,
+        &#34;date&#34;: &#34;20191228&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;17℃~19℃&#34;,
+        &#34;weather&#34;: &#34;大雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;09&#34;,
+          &#34;fb&#34;: &#34;09&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期日&#34;,
+        &#34;date&#34;: &#34;20191229&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;13℃~19℃&#34;,
+        &#34;weather&#34;: &#34;多云转小雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;07&#34;
+        },
+        &#34;wind&#34;: &#34;东北风3-5级&#34;,
+        &#34;week&#34;: &#34;星期一&#34;,
+        &#34;date&#34;: &#34;20191230&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;13℃~19℃&#34;,
+        &#34;weather&#34;: &#34;多云转小雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;07&#34;
+        },
+        &#34;wind&#34;: &#34;东北风3-5级&#34;,
+        &#34;week&#34;: &#34;星期二&#34;,
+        &#34;date&#34;: &#34;20191231&#34;
+      }
+    ]
+  },
+  &#34;error_code&#34;: 0
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1753</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>97.33</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>94.348</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>create1</h3>
+  <table id="suite_6" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_6_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">当前城市:宁德 / %E5%AE%81%E5%BE%B7</td>
+      <td style="text-align:center;width:6em;">101.68 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_6_1_1">log-1</a>
+        <div id="popup_log_6_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_6_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 当前城市:宁德 / %E5%AE%81%E5%BE%B7</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E5%AE%81%E5%BE%B7&key=ef89cb108293d8f57e3dfe63610e0680
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.22.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://v.juhe.cn/weather/index?format=2&cityname=%E5%AE%81%E5%BE%B7&key=ef89cb108293d8f57e3dfe63610e0680
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'aliyungf_tc': 'AQAAAKf0v2s5OQsAnApC2t5XrdY2Azp6'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Wed, 25 Dec 2019 06:08:29 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=utf-8&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Set-Cookie&#34;: &#34;aliyungf_tc=AQAAAKf0v2s5OQsAnApC2t5XrdY2Azp6; Path=/; HttpOnly&#34;,
+  &#34;Etag&#34;: &#34;063d270dc44003f39cf480b7ec6ff843&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;resultcode&#34;: &#34;200&#34;,
+  &#34;reason&#34;: &#34;successed!&#34;,
+  &#34;result&#34;: {
+    &#34;sk&#34;: {
+      &#34;temp&#34;: &#34;19&#34;,
+      &#34;wind_direction&#34;: &#34;南风&#34;,
+      &#34;wind_strength&#34;: &#34;1级&#34;,
+      &#34;humidity&#34;: &#34;73%&#34;,
+      &#34;time&#34;: &#34;13:55&#34;
+    },
+    &#34;today&#34;: {
+      &#34;temperature&#34;: &#34;14℃~20℃&#34;,
+      &#34;weather&#34;: &#34;多云转晴&#34;,
+      &#34;weather_id&#34;: {
+        &#34;fa&#34;: &#34;01&#34;,
+        &#34;fb&#34;: &#34;00&#34;
+      },
+      &#34;wind&#34;: &#34;持续无风向微风&#34;,
+      &#34;week&#34;: &#34;星期三&#34;,
+      &#34;city&#34;: &#34;宁德&#34;,
+      &#34;date_y&#34;: &#34;2019年12月25日&#34;,
+      &#34;dressing_index&#34;: &#34;较冷&#34;,
+      &#34;dressing_advice&#34;: &#34;建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。&#34;,
+      &#34;uv_index&#34;: &#34;弱&#34;,
+      &#34;comfort_index&#34;: &#34;&#34;,
+      &#34;wash_index&#34;: &#34;较适宜&#34;,
+      &#34;travel_index&#34;: &#34;较适宜&#34;,
+      &#34;exercise_index&#34;: &#34;较适宜&#34;,
+      &#34;drying_index&#34;: &#34;&#34;
+    },
+    &#34;future&#34;: [
+      {
+        &#34;temperature&#34;: &#34;14℃~20℃&#34;,
+        &#34;weather&#34;: &#34;多云转晴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;00&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期三&#34;,
+        &#34;date&#34;: &#34;20191225&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;10℃~20℃&#34;,
+        &#34;weather&#34;: &#34;阴转多云&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;01&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期四&#34;,
+        &#34;date&#34;: &#34;20191226&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;8℃~15℃&#34;,
+        &#34;weather&#34;: &#34;晴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;00&#34;,
+          &#34;fb&#34;: &#34;00&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期五&#34;,
+        &#34;date&#34;: &#34;20191227&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;10℃~17℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期六&#34;,
+        &#34;date&#34;: &#34;20191228&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;16℃~18℃&#34;,
+        &#34;weather&#34;: &#34;大雨转中雨&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;09&#34;,
+          &#34;fb&#34;: &#34;08&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期日&#34;,
+        &#34;date&#34;: &#34;20191229&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;10℃~17℃&#34;,
+        &#34;weather&#34;: &#34;多云转阴&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;01&#34;,
+          &#34;fb&#34;: &#34;02&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期一&#34;,
+        &#34;date&#34;: &#34;20191230&#34;
+      },
+      {
+        &#34;temperature&#34;: &#34;10℃~20℃&#34;,
+        &#34;weather&#34;: &#34;阴转多云&#34;,
+        &#34;weather_id&#34;: {
+          &#34;fa&#34;: &#34;02&#34;,
+          &#34;fb&#34;: &#34;01&#34;
+        },
+        &#34;wind&#34;: &#34;持续无风向微风&#34;,
+        &#34;week&#34;: &#34;星期二&#34;,
+        &#34;date&#34;: &#34;20191231&#34;
+      }
+    ]
+  },
+  &#34;error_code&#34;: 0
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1746</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>101.68</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>99.015</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>

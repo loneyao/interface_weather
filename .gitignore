@@ -1,0 +1,6 @@
+.DS_Store
+*.apk
+.idea
+__pycache__
+result
+*.mp4

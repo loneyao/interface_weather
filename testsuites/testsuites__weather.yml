@@ -1,0 +1,7 @@
+config:
+    name: "单接口测试testsuites"
+testcases:
+    create1:
+        testcase: 'testcases/testcase_weather.yml'
+        parameters:
+            cityname: ${P(data/cityname.csv)}
