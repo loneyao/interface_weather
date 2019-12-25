@@ -18,26 +18,3 @@ validate:
 
 
 
-
-#- config:
-#
-#    name: basic test with httpbin
-#    request:
-#    base_url: http://v.juhe.cn/weather/index?
-#    setup_hooks:
-#        - ${hook_up()}
-#        - ${hook_print(setup)}
-#    teardown_hooks:
-#        - ${hook_up()}
-#        - ${hook_print(setup)}
-#- test:
-#    name: test weather
-#    request:
-#        url: /get
-#        method: GET
-#        params:
-#            format: 2
-#            cityname: 南平
-#            key: ef89cb108293d8f57e3dfe63610e0680
-#    validate:
-#        - eq: [status_code,200]
